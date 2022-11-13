@@ -1,0 +1,28 @@
+{
+  "name": "@gito/gito-cli",
+  "version": "1.0.0",
+  "description": "Open local git repositories in the browser",
+  "main": "gito-cli.zsh",
+  "bin": {
+    "gito": "./gito-cli.zsh"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefonSimmons/gito-cli.git"
+  },
+  "keywords": [
+    "git",
+    "cli",
+    "github",
+    "browser"
+  ],
+  "author": "Stefon Simmons",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StefonSimmons/gito-cli/issues"
+  },
+  "homepage": "https://github.com/StefonSimmons/gito-cli#readme"
+}
