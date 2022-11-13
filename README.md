@@ -2,6 +2,7 @@
 A simple package to open local git repositories in the browser. GITO cli applies to the working directory
 
 ## Install
+GITO cli is a npm package: https://www.npmjs.com/package/@gito/gito-cli
 
 ```bash
 npm install -g @gito/gito-cli
