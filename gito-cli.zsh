@@ -17,7 +17,7 @@ then
 elif [[ "$1" == "-b" ]]
 then
     open "$repo/tree/$2"
-elif [[ "$1" == "-n" ]]
+elif [[ "$1" == "-r" ]]
 then
     repo="$(
         git remote -v | # get the remote repositories
@@ -34,17 +34,15 @@ then
     open $repo
 elif [[ "$1" == "-h" || "$1" == "--help" || $("$1" | cut -b -1) != "-" ]]
 then
-<<comm
-GITO cli: Open local git repos in the browser
-
-Copyright Stefon Simmons | stefonsimmons1@gmail.com
-
-Note:                       GITO cli applies to the working directory
-
-Usage:
-gito                    (default) Opens the default branch of the origin fetch remote repository.
-gito -n <remote name>   Opens the remote repo for specified remote name. 
-gito -b <branch name>   Opens the remote repo at specified "branch name".
-gito [ -h | --help ]    Shows this message.
-comm
+echo "GITO cli: Open local git repos in the browser"
+echo 
+echo "Copyright Stefon Simmons | stefonsimmons1@gmail.com"
+echo
+echo "Note:                    GITO cli applies to the working directory"
+echo
+echo "Usage:"
+echo "gito                    (default) Opens the default branch of the origin fetch remote repository."
+echo "gito -r <remote name>   Opens the remote repo for specified remote name. e.g. 'origin'"
+echo "gito -b <branch name>   Opens the remote repo at specified branch name."
+echo "gito [ -h | --help ]    Shows this message."
 fi
