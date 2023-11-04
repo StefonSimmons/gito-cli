@@ -11,7 +11,7 @@ npm install -g @gito/gito-cli
 ## Usage:
 ```md> 
 gito                    (default) Opens the default branch of the origin fetch remote repository.
-gito -n <remote name>   Opens the remote repo for specified remote name. 
+gito -r <remote name>   Opens the remote repo for specified remote name. e.g. 'origin'
 gito -b <branch name>   Opens the remote repo at specified "branch name".
 gito [ -h | --help ]    Shows this message.
 ```
