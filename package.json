@@ -1,6 +1,6 @@
 {
   "name": "@gito/gito-cli",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Open local git repositories in the browser",
   "main": "gito-cli.zsh",
   "bin": {
