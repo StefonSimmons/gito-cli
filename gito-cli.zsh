@@ -17,7 +17,7 @@ then
 elif [[ "$1" == "-b" ]]
 then
     open "$repo/tree/$2"
-elif [[ "$1" == "-n" ]]
+elif [[ "$1" == "-r" ]]
 then
     repo="$(
         git remote -v | # get the remote repositories
@@ -38,11 +38,11 @@ echo "GITO cli: Open local git repos in the browser"
 echo 
 echo "Copyright Stefon Simmons | stefonsimmons1@gmail.com"
 echo
-echo "Note:                       GITO cli applies to the working directory"
+echo "Note:                    GITO cli applies to the working directory"
 echo
 echo "Usage:"
 echo "gito                    (default) Opens the default branch of the origin fetch remote repository."
-echo "gito -n <remote name>   Opens the remote repo for specified remote name."
-echo "gito -b <branch name>   Opens the remote repo at specified "branch name"."
+echo "gito -r <remote name>   Opens the remote repo for specified remote name. e.g. 'origin'"
+echo "gito -b <branch name>   Opens the remote repo at specified branch name."
 echo "gito [ -h | --help ]    Shows this message."
 fi
